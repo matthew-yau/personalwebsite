@@ -25,7 +25,7 @@ const Education = () => (
       <p className="text-sm text-blue-400">
         Bachelor of Engineering (Honours) & Bachelor of Commerce
       </p>
-      <p className="text-sm">2020 – 2021 (Discontinued)</p>
+      <p className="text-sm">2020 (Discontinued)</p>
       <p className="mt-2 text-sm leading-relaxed">
         Pursued a double degree in Engineering and Commerce at Monash University
         before transitioning out of the Engineering program.
@@ -65,8 +65,133 @@ const Education = () => (
 // Experience Section
 const Experience = () => (
   <div>
-    <h1 className="text-xl font-bold">Experience</h1>
-    <p>Details about my experience...</p>
+    <h1 className="text-xl font-bold mb-4">Experience</h1>
+
+    {/* Corpy & Co. */}
+    <div className="mb-6 pb-4 border-b border-gray-600">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          {" "}
+          <a
+            href="https://corpy.co.jp/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img
+              src="/images/corpyco.jpg"
+              alt="Corpy & Co."
+              className="w-10 h-10 object-contain"
+            />
+            <div>
+              <h2 className="text-lg font-semibold">
+                <span>AI Engineer Intern</span>
+              </h2>
+              <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>{" "}
+              {/* Location under job title */}
+            </div>
+          </a>
+        </div>
+        <p className="text-sm text-right">May 2024 — Nov 2024</p>
+      </div>
+      <ul className="mt-2 text-sm list-disc pl-5">
+        <li>
+          Improved data processing scripts by over 30% to automate the cleansing
+          and processing of over 1000 terabytes of image data efficiently.
+        </li>
+        <li>
+          Developed and containerized machine learning models using Docker,
+          seamlessly integrated with Amazon S3 for scalable data storage and
+          management.
+        </li>
+        <li>
+          Collaborated closely with clients throughout all project phases,
+          ensuring solutions met their expectations.
+        </li>
+        <li>
+          Developed and enforced quality assurance protocols to ensure
+          consistent and reliable project outcomes.
+        </li>
+      </ul>
+    </div>
+
+    {/* PwC */}
+    <div className="mb-6 pb-4 border-gray-600">
+      <div className="flex items-center justify-between">
+        {" "}
+        <div className="flex items-center gap-3">
+          {" "}
+          <a
+            href="https://www.pwc.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img
+              src="/images/pwc.png"
+              alt="PwC"
+              className="w-10 h-10 object-contain"
+            />{" "}
+            {/* Replace with PwC logo */}
+            <div>
+              <h2 className="text-lg font-semibold">
+                <span>Vacationer</span>
+              </h2>
+              <p className="text-sm text-gray-400">
+                📍Melbourne, Australia — Onsite
+              </p>{" "}
+            </div>
+          </a>
+        </div>
+        <p className="text-sm text-right">Nov 2024 — Feb 2025</p>
+      </div>{" "}
+      <ul className="mt-2 text-sm list-disc pl-5">
+        <li>
+          Leveraged LLMs to classify tangible assets based on key attributes,
+          reducing asset categorization time by 40% and improving model
+          consistency for valuations worth over $100 million.
+        </li>
+        <li>
+          Implemented an OpenCV-based solution to extract and process asset data
+          from PDFs and scanned reports, automating the population of Excel
+          asset registers and reducing manual data entry time by 50%.
+        </li>
+        <li>
+          Refined existing discounted cash flow and market-based valuation
+          models to accurately date and value client assets, improving valuation
+          accuracy by 3%.
+        </li>
+      </ul>
+    </div>
+
+    {/* Morgan Stanley - Incoming Technology Intern */}
+    {/* <div>
+      <div className="flex items-center justify-between">
+        {" "}
+        <a
+          href="https://www.morganstanley.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2"
+        >
+          <div className="flex items-center gap-3">
+            <img
+              src="/images/morganstanley.jpg"
+              alt="Morgan Stanley"
+              className="w-10 h-10 object-contain"
+            />{" "}
+            <div>
+              <h2 className="text-lg font-semibold">
+                <span>Incoming Summer Analyst</span>
+              </h2>
+              <p className="text-sm text-gray-400">📍Tokyo, Japan — Onsite</p>{" "}
+            </div>
+          </div>
+        </a>
+        <p className="text-sm text-right">Jun 2025 — Aug 2025</p>
+      </div>
+      <p className="mt-2 text-sm leading-relaxed">Technology arm.</p>
+    </div> */}
   </div>
 );
 
@@ -89,7 +214,7 @@ const Home = () => (
         <p className="mt-2 text-blue-400 font-medium">
           Final Year Computer Science and Finance Student at Monash University
         </p>
-        <p className="text-sm mt-6 mb-3">📍 Melbourne, Australia</p>
+        <p className="text-sm mt-6 mb-3">📍Melbourne, Australia</p>
         <div className="flex gap-4 pl-1">
           <a
             href="https://www.linkedin.com/in/matthewwyau/"
