@@ -10,7 +10,7 @@ import {
   Mail,
 } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
+/* import { Button } from "@/components/ui/button"; */
 
 const SidebarButton = ({
   label,
