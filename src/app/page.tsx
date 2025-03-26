@@ -16,8 +16,7 @@ const Education = () => (
       <p className="mt-2 text-sm leading-relaxed">
         Completed VCE at John Monash Science School, undertaking the units
         English, Japanese as a Second Language, Mathematical Methods, Specialist
-        Mathematics, Economics and Chemistry achieving a result within the top
-        2% of the state.
+        Mathematics, Economics and Chemistry.
       </p>
     </div>
 
