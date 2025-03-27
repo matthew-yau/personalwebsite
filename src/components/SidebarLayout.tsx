@@ -44,7 +44,7 @@ const SidebarLayout = ({
 }) => {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4">
-      <div className="flex w-full max-w-3xl rounded-2xl overflow-hidden shadow-xl bg-gray-800">
+      <div className="flex w-full max-w-3xl overflow-hidden rounded-2xl h-[700px] overflow-hidden shadow-xl bg-gray-800">
         {/* Sidebar */}
         <div className="w-20 bg-gray-700 p-4 flex flex-col items-center space-y-4">
           <SidebarButton
@@ -92,9 +92,10 @@ const SidebarLayout = ({
         </div>
 
         {/* Main content */}
-        <div className="flex-1 p-6">
-          <div className="bg-gray-900 p-6 rounded-xl shadow-lg">{children}</div>
-        </div>
+        <div className="flex-1 p-0 h-full">
+        <div className="h-full overflow-y-auto p-6">
+          <div className="bg-gray-900 p-6 rounded-xl shadow-lg h-full">{children}</div>
+        </div></div>
       </div>
     </div>
   );
