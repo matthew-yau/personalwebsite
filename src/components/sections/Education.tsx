@@ -62,15 +62,14 @@ const Education = () => (
         <p className="text-sm text-gray-400">2021 – 2025 (Ongoing)</p>
       </div>
       <p className="text-sm text-blue-400">
-        Bachelor of Computer Science & Bachelor of Commerce{" "}
+        Bachelor of Computer Science & Bachelor of Commerce
       </p>
       <p className="text-sm text-blue-400 italic">
         Specialising in Data Science and Finance
       </p>
 
       <p className="mt-2 text-sm leading-relaxed">
-        Currently pursuing a dual degree in Computer Science and Commerce,
-        specializing in Data Science and Finance.
+        Currently pursuing a double degree in Computer Science and Commerce.
       </p>
     </div>
   </div>
