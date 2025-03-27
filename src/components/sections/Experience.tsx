@@ -67,7 +67,7 @@ const Experience = () => (
             className="flex items-center gap-2"
           >
             <img
-              src="/images/pwc.png"
+              src="/images/pwc.jpg"
               alt="PwC"
               className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
