@@ -22,17 +22,18 @@ const Experience = () => (
             <img
               src="/images/corpyco.jpg"
               alt="Corpy & Co."
-              className="w-10 h-10 object-contain"
+              className="w-20 h-20 object-contain"
             />
             <div>
-              <h2 className="text-lg font-semibold">AI Engineer Intern</h2>
+              <div className="font-bold text-xl text-white">Corpy&Co.</div>
+              <h2 className="font-semibold mb-2">AI Engineer Intern</h2>
               <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>
             </div>
           </a>
         </div>
-        <p className="text-sm text-gray-300 sm:text-right">
+        <div className="flex flex-col text-sm text-gray-400 md:flex-row justify-between md:items-center">
           May 2024 — Nov 2024
-        </p>
+        </div>
       </div>
       <ul className="mt-3 text-sm list-disc pl-5 text-gray-300">
         <li>
@@ -68,19 +69,20 @@ const Experience = () => (
             <img
               src="/images/pwc.png"
               alt="PwC"
-              className="w-10 h-10 object-contain"
+              className="w-20 h-20 object-contain"
             />
             <div>
-              <h2 className="text-lg font-semibold">Vacationer</h2>
+              <div className="font-bold text-xl text-white">PwC</div>
+              <h2 className="font-semibold mb-2">Vacationer</h2>
               <p className="text-sm text-gray-400">
                 📍Melbourne, Australia — Onsite
               </p>
             </div>
           </a>
         </div>
-        <p className="text-sm text-gray-300 sm:text-right">
+        <div className="flex flex-col text-sm text-gray-400 md:flex-row justify-between md:items-center">
           Nov 2024 — Feb 2025
-        </p>
+        </div>
       </div>
       <ul className="mt-3 text-sm list-disc pl-5 text-gray-300">
         <li>

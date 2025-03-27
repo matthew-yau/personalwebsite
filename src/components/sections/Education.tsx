@@ -10,9 +10,9 @@ const Education = () => (
       </h1>
     </div>
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between md:items-center">
         <h2 className="text-lg font-semibold">John Monash Science School</h2>
-        <p className="text-sm text-gray-400">2017 – 2019</p>
+        <p className="text-sm text-gray-400">2017 – 2019 (Completed)</p>
       </div>
       <p className="text-sm text-blue-400">
         Victorian Certificate of Education (VCE)
@@ -25,7 +25,7 @@ const Education = () => (
     </div>
 
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between md:items-center">
         <h2 className="text-lg font-semibold">Monash University</h2>
         <p className="text-sm text-gray-400">2020 (Discontinued)</p>
       </div>
@@ -39,7 +39,7 @@ const Education = () => (
     </div>
 
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between md:items-center">
         <h2 className="text-lg font-semibold">Monash University</h2>
         <p className="text-sm text-gray-400">2021 – 2024 (Completed)</p>
       </div>
@@ -57,7 +57,7 @@ const Education = () => (
     </div>
 
     <div>
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between md:items-center">
         <h2 className="text-lg font-semibold">Monash University</h2>
         <p className="text-sm text-gray-400">2021 – 2025 (Ongoing)</p>
       </div>

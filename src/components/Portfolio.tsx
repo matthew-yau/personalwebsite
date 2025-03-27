@@ -6,7 +6,6 @@ import Home from "@/components/sections/Home";
 import Education from "@/components/sections/Education";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
-import Blog from "@/components/sections/Blog";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("Home");
@@ -25,9 +24,6 @@ const Portfolio = () => {
       break;
     case "Projects":
       sectionContent = <Projects />;
-      break;
-    case "Blog":
-      sectionContent = <Blog />;
       break;
     case "Home":
     default:

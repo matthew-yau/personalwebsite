@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, Book, Briefcase, Folder, Pen } from "lucide-react"; // added missing icons
+import { Home, Book, Briefcase, Folder } from "lucide-react"; // added missing icons
 
 const SidebarButton = ({
   label,
@@ -61,12 +61,6 @@ const SidebarLayout = ({
             icon={<Folder size={20} />}
             active={activeSection === "Projects"}
             onClick={() => handleSidebarClick("Projects")}
-          />
-          <SidebarButton
-            label="Blog"
-            icon={<Pen size={20} />}
-            active={activeSection === "Blog"}
-            onClick={() => handleSidebarClick("Blog")}
           />
         </div>
 
