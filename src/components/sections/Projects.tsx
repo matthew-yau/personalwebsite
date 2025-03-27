@@ -37,17 +37,18 @@ const Projects = () => {
       {/* Web Development Tab */}
       {activeTab === "Web Development" && (
         <div className="mb-6 pb-4 border-gray-600 border-b">
-          <div className="flex font-bold items-center mt-2 justify-between">
-            <div className="text-l text-blue-500 hover:underline">
-              <a
-                href="https://www.monashjapaneseclub.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                www.monashjapaneseclub.com
-              </a>
-            </div>
-            <div className="italic text-gray-200">(2025)</div>
+          <div className="flex items-center mt-2 justify-between">
+            <h2 className="font-bold">MJC Website</h2>
+            <div className="text-sm text-gray-300 sm:text-right">2025</div>
+          </div>
+          <div className="text-l text-blue-500 hover:underline">
+            <a
+              href="https://www.monashjapaneseclub.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.monashjapaneseclub.com
+            </a>
           </div>
           <div className="mt-2 text-sm leading-relaxed">
             <div>
@@ -66,7 +67,7 @@ const Projects = () => {
               </li>
             </ul>
           </div>
-          <div className="flex gap-2 mt-2">
+          <div className="flex gap-2 mt-4">
             <span className="inline-flex items-center justify-center bg-blue-500 text-white p-2 rounded-full">
               <FaReact size={20} />
             </span>
@@ -86,11 +87,11 @@ const Projects = () => {
       {/* Data Science Tab */}
       {activeTab === "Data Science" && (
         <div className="border-b border-gray-600 mb-6 pb-4">
-          <div className="justify-between flex font-bold">
-            <div className="text-blue-500">
+          <div className="justify-between flex">
+            <div className="text-blue-500 font-bold">
               Modelling the Australian Open With Monte Carlo Simulations
             </div>
-            <div className="italic text-gray-200">(2024)</div>
+            <div className="text-sm text-gray-300 sm:text-right">2024</div>
           </div>
           <div className="text-sm text-gray-300 mt-2">
             In this project I explore the effects of various athlete attributes
