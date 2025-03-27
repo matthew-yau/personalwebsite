@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Home,
-  Book,
-  Briefcase,
-  BadgeCheck,
-  Folder,
-  Sparkles,
-  Mail,
-} from "lucide-react"; // Ensure icons are imported
+import { Home, Book, Briefcase, Folder, Heart, Pen } from "lucide-react"; // added missing icons
 
 const SidebarButton = ({
   label,
@@ -18,19 +10,18 @@ const SidebarButton = ({
   label: string;
   icon: React.ReactNode;
   active?: boolean;
-  onClick: () => void; // onClick for SidebarButton
+  onClick: () => void;
 }) => (
-  <div
-    className={`flex flex-col items-center text-xs gap-1 p-2 rounded-xl w-full ${
-      active
-        ? "bg-gray-600 text-white"
-        : "text-gray-400 hover:text-white hover:bg-gray-600"
-    } cursor-pointer transition-all`}
+  <button
     onClick={onClick}
+    aria-label={label}
+    className={`group flex flex-col items-center justify-center p-1 w-18 h-14 sm:w-18 sm:h-18 rounded-lg transition-all duration-200
+      ${active ? "bg-blue-600 text-white shadow-md" : "text-gray-400 hover:bg-gray-600 hover:text-white"}
+      focus:outline-none focus:ring-2 focus:ring-blue-400`}
   >
-    {icon}
-    <span className="text-[10px]">{label}</span>
-  </div>
+    <div className="text-xl">{icon}</div>
+    <span className="text-[12px] leading-tight">{label}</span>
+  </button>
 );
 
 const SidebarLayout = ({
@@ -43,59 +34,54 @@ const SidebarLayout = ({
   handleSidebarClick: (section: string) => void;
 }) => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4">
-      <div className="flex w-full max-w-3xl overflow-hidden rounded-2xl h-[700px] overflow-hidden shadow-xl bg-gray-800">
+    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4 py-4 sm:py-8">
+      <div className="flex flex-col md:flex-row w-full max-w-[52rem] h-full md:h-[700px] overflow-hidden rounded-2xl shadow-xl bg-gray-800">
         {/* Sidebar */}
-        <div className="w-20 bg-gray-700 p-4 flex flex-col items-center space-y-4">
+        <div className="flex md:flex-col overflow-x-auto md:overflow-y-auto bg-gray-700 p-2 md:p-4 gap-2 md:space-y-4 md:w-26 gap-4 w-full justify-center md:justify-start">
           <SidebarButton
             label="Home"
-            icon={<Home size={18} />}
+            icon={<Home size={20} />}
             active={activeSection === "Home"}
             onClick={() => handleSidebarClick("Home")}
           />
           <SidebarButton
             label="Education"
-            icon={<Book size={18} />}
+            icon={<Book size={20} />}
             active={activeSection === "Education"}
             onClick={() => handleSidebarClick("Education")}
           />
           <SidebarButton
             label="Experience"
-            icon={<Briefcase size={18} />}
+            icon={<Briefcase size={20} />}
             active={activeSection === "Experience"}
             onClick={() => handleSidebarClick("Experience")}
           />
           <SidebarButton
-            label="Certifications"
-            icon={<BadgeCheck size={18} />}
-            active={activeSection === "Certifications"}
-            onClick={() => handleSidebarClick("Certifications")}
-          />
-          <SidebarButton
             label="Projects"
-            icon={<Folder size={18} />}
+            icon={<Folder size={20} />}
             active={activeSection === "Projects"}
             onClick={() => handleSidebarClick("Projects")}
           />
           <SidebarButton
-            label="Skills"
-            icon={<Sparkles size={18} />}
-            active={activeSection === "Skills"}
-            onClick={() => handleSidebarClick("Skills")}
+            label="Hobbies"
+            icon={<Heart size={20} />}
+            active={activeSection === "Hobbies"}
+            onClick={() => handleSidebarClick("Hobbies")}
           />
           <SidebarButton
-            label="Contact"
-            icon={<Mail size={18} />}
-            active={activeSection === "Contact"}
-            onClick={() => handleSidebarClick("Contact")}
+            label="Blog"
+            icon={<Pen size={20} />}
+            active={activeSection === "Blog"}
+            onClick={() => handleSidebarClick("Blog")}
           />
         </div>
 
         {/* Main content */}
-        <div className="flex-1 p-0 h-full">
-        <div className="h-full overflow-y-auto p-6">
-          <div className="bg-gray-900 p-6 rounded-xl shadow-lg h-full">{children}</div>
-        </div></div>
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+          <div className="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-inner min-h-full">
+            {children}
+          </div>
+        </div>
       </div>
     </div>
   );
