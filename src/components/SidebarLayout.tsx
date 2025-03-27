@@ -65,7 +65,7 @@ const SidebarLayout = ({
         </div>
 
         {/* Main content area */}
-        <div className="flex-1 bg-gray-800 rounded-2xl shadow-xl p-4 sm:p-6 h-[800px] overflow-y-auto">
+        <div className="flex-1 bg-gray-800 rounded-2xl shadow-xl p-4 sm:p-6 h-[700px] overflow-y-auto">
           <div className="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-inner min-h-full">
             {children}
           </div>
