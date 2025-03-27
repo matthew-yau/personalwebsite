@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, Book, Briefcase, Folder } from "lucide-react"; // added missing icons
+import { Home, Book, Briefcase, Folder } from "lucide-react";
 
 const SidebarButton = ({
   label,
@@ -35,9 +35,9 @@ const SidebarLayout = ({
 }) => {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4 py-4 sm:py-8">
-      <div className="flex flex-col md:flex-row w-full max-w-[52rem] h-full md:h-[700px] overflow-hidden rounded-2xl shadow-xl bg-gray-800">
-        {/* Sidebar */}
-        <div className="flex md:flex-col overflow-x-auto md:overflow-y-auto bg-gray-700 p-2 md:p-4 gap-2 md:space-y-4 md:w-26 gap-4 w-full justify-center md:justify-start">
+      <div className="flex flex-col md:flex-row w-full max-w-[52rem] gap-4">
+        {/* Sidebar: embedded on mobile, detached on md+ screens */}
+        <div className="bg-gray-700 p-2 rounded-2xl shadow-lg flex flex-row md:flex-col items-center justify-center gap-4 h-auto md:h-[300px] w-full md:w-auto">
           <SidebarButton
             label="Home"
             icon={<Home size={20} />}
@@ -64,8 +64,8 @@ const SidebarLayout = ({
           />
         </div>
 
-        {/* Main content */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+        {/* Main content area */}
+        <div className="flex-1 bg-gray-800 rounded-2xl shadow-xl p-4 sm:p-6 h-[800px] overflow-y-auto">
           <div className="bg-gray-900 p-4 sm:p-6 rounded-xl shadow-inner min-h-full">
             {children}
           </div>

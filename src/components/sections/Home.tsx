@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaUniversity,
   FaMapMarkerAlt,
+  FaEnvelope,
 } from "react-icons/fa";
 
 const Home = () => (
@@ -61,6 +62,14 @@ const Home = () => (
           >
             <FaGithub className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
           </a>
+          <a
+            href="mailto:matthew.w.yau@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <FaEnvelope className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
+          </a>
         </div>
       </div>
     </div>
@@ -79,8 +88,8 @@ const Home = () => (
         alternative to traditional delta hedging.
       </p>
       <p className="mt-3">
-        Outside of work and study, I’m an avid weightlifter and make a conscious
-        effort to touch grass.
+        Outside of work and study, I’m an avid weightlifter and have an
+        unhealthy obsession with caffeine.
       </p>
 
       {/* Tags */}

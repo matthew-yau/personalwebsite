@@ -22,9 +22,9 @@ const Experience = () => (
             <img
               src="/images/corpyco.jpg"
               alt="Corpy & Co."
-              className="w-20 h-20 object-contain"
+              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
-            <div>
+            <div className="pl-2">
               <div className="font-bold text-xl text-white">Corpy&Co.</div>
               <h2 className="font-semibold mb-2">AI Engineer Intern</h2>
               <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>
@@ -69,9 +69,9 @@ const Experience = () => (
             <img
               src="/images/pwc.png"
               alt="PwC"
-              className="w-20 h-20 object-contain"
+              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
-            <div>
+            <div className="pl-2">
               <div className="font-bold text-xl text-white">PwC</div>
               <h2 className="font-semibold mb-2">Vacationer</h2>
               <p className="text-sm text-gray-400">
