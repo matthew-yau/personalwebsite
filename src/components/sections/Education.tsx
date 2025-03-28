@@ -21,7 +21,7 @@ const Education = () => (
             <img
               src="/images/jmss.jpg"
               alt="John Monash Science School"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="h-[80px] w-auto sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
           </a>
           <div>
@@ -53,7 +53,7 @@ const Education = () => (
             <img
               src="/images/monash.png"
               alt="Monash University"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="h-[110px] w-auto sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
           </a>
           <div>
@@ -84,7 +84,7 @@ const Education = () => (
             <img
               src="/images/monash.png"
               alt="Monash University"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
           </a>
           <div>
@@ -119,7 +119,7 @@ const Education = () => (
             <img
               src="/images/utokyo.png"
               alt="The University of Tokyo"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
           </a>
           <div>
@@ -149,7 +149,7 @@ const Education = () => (
             <img
               src="/images/monash.png"
               alt="Monash University"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="h-[110px] w-auto sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
           </a>
           <div>
