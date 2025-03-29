@@ -22,3 +22,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #6b7280; /* Tailwind's gray-500 */
 }
+
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scale(1.5);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle 0.6s ease-out forwards;
+}

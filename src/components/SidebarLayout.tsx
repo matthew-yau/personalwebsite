@@ -55,7 +55,7 @@ const SidebarLayout = ({
         />
         <div className="absolute inset-0 bg-white/30 backdrop-blur-sm" />
       </div>
-      <div className="flex flex-col md:flex-row w-full max-w-[52rem] gap-4">
+      <div className="flex flex-col md:flex-row w-full max-w-[52rem] gap-4 py-8 sm-py-0">
         {/* Sidebar: embedded on mobile, detached on md+ screens */}
         <div className="bg-gray-700 p-2 rounded-2xl shadow-lg flex flex-row md:flex-col items-center justify-center gap-4 h-auto md:h-[300px] w-full md:w-auto">
           <SidebarButton

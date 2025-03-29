@@ -3,6 +3,7 @@
 import { Card } from "@/components/ui/card";
 import { FileText, BookOpen } from "lucide-react";
 import Link from "next/link";
+import DogWithParticles from "@/components/dawg";
 
 export default function HomePage() {
   return (
@@ -18,11 +19,7 @@ export default function HomePage() {
       </div>
 
       {/* 🔹 Profile Image */}
-      <img
-        src="/images/heen.gif"
-        alt="Profile"
-        className="w-36 h-36 sm:w-48 sm:h-48 rounded-full object-cover shadow-md mb-6"
-      />
+      <DogWithParticles />
 
       {/* 🔹 Title Section */}
       <div className="text-center mb-10 px-4">
