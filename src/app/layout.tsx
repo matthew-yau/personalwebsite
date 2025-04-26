@@ -21,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.variable}>{children}</body>
+      <body className={barlow.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
