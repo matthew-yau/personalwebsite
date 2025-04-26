@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill, RiSupabaseFill } from "react-icons/ri";
 import { DiPostgresql } from "react-icons/di";
 import { Folder } from "lucide-react";
+import { SiSpringboot } from "react-icons/si";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("Web Development");
@@ -23,7 +24,7 @@ const Projects = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-4 py-2 text-sm font-medium border-b-2 ${
+            className={`px-4 py-2 text-sm font-medium border-b-2 w-1/2 ${
               activeTab === tab
                 ? "border-blue-500 text-blue-400"
                 : "border-transparent text-gray-400 hover:text-white"
@@ -36,50 +37,107 @@ const Projects = () => {
 
       {/* Web Development Tab */}
       {activeTab === "Web Development" && (
-        <div className="mb-6 pb-4 border-gray-600 border-b">
-          <div className="flex items-center mt-2 justify-between">
-            <h2 className="font-bold">MJC Website</h2>
-            <div className="text-sm text-gray-300 sm:text-right">2025</div>
-          </div>
-          <div className="text-l text-blue-500 hover:underline">
-            <a
-              href="https://www.monashjapaneseclub.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.monashjapaneseclub.com
-            </a>
-          </div>
-          <div className="mt-2 text-sm leading-relaxed">
-            <div>
-              As the IT director of the Monash Japanese Club, I was tasked with
-              rebuilding their website to attract both members and sponsors.
+        <div>
+          <div className="mb-6 pb-4 border-gray-600 border-b">
+            <div className="flex items-center mt-2 justify-between">
+              <h2 className="font-bold">MJC Website</h2>
+              <div className="text-sm text-gray-300 sm:text-right">2025</div>
             </div>
-            <div className="font-bold mt-2">Key metrics:</div>
-            <ul className="list-disc list-inside text-sm text-gray-200">
-              <li>
-                Utilised causal inference methods to attribute a year-on-year
-                membership increase of 30% from 380 to 500 active members.
-              </li>
-              <li>
-                Developed a proof of concept design with Figma and developed it
-                with Next.js.
-              </li>
-            </ul>
-          </div>
-          <div className="flex gap-2 mt-4">
-            <span className="inline-flex items-center justify-center bg-blue-500 text-white p-2 rounded-full">
-              <FaReact size={20} />
-            </span>
-            <span className="inline-flex items-center justify-center bg-cyan-500 text-white p-2 rounded-full">
-              <RiTailwindCssFill size={20} />
-            </span>
-            <span className="inline-flex items-center justify-center bg-[#3FCF8E] text-white p-2 rounded-full">
-              <RiSupabaseFill size={20} />
-            </span>
-            <span className="inline-flex items-center justify-center bg-[#336791] text-white p-2 rounded-full">
-              <DiPostgresql size={20} />
-            </span>
+            <div className="text-l text-blue-500 hover:underline">
+              <a
+                href="https://www.monashjapaneseclub.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.monashjapaneseclub.com
+              </a>
+            </div>
+            <div className="mt-2 text-sm leading-relaxed">
+              <div>
+                As the IT director of the Monash Japanese Club, I was tasked
+                with rebuilding their website to attract both members and
+                sponsors.
+              </div>
+              <div className="font-bold mt-2">Key metrics:</div>
+              <ul className="list-disc list-inside text-sm text-gray-200">
+                <li>
+                  Utilised causal inference methods to attribute a year-on-year
+                  membership increase of 30% from 380 to 500 active members.
+                </li>
+                <li>
+                  Developed a proof of concept design with Figma and developed
+                  it with Next.js.
+                </li>
+              </ul>
+            </div>
+            <div className="flex gap-2 mt-4">
+              <span className="inline-flex items-center justify-center bg-blue-500 text-white p-2 rounded-full">
+                <FaReact size={20} />
+              </span>
+              <span className="inline-flex items-center justify-center bg-cyan-500 text-white p-2 rounded-full">
+                <RiTailwindCssFill size={20} />
+              </span>
+              <span className="inline-flex items-center justify-center bg-[#3FCF8E] text-white p-2 rounded-full">
+                <RiSupabaseFill size={20} />
+              </span>
+              <span className="inline-flex items-center justify-center bg-[#336791] text-white p-2 rounded-full">
+                <DiPostgresql size={20} />
+              </span>
+            </div>
+          </div>{" "}
+          <div className="mb-6 pb-4 border-gray-600 border-b">
+            <div className="flex items-center mt-2 justify-between">
+              <h2 className="font-bold">StudyLink</h2>
+              <div className="text-sm text-gray-300 sm:text-right">2025</div>
+            </div>
+            <div className="text-l text-blue-500 hover:underline">
+              <a
+                href="https://github.com/matthew-yau/macathon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/matthew-yau/macathon
+              </a>
+            </div>
+            <div className="mt-2 text-sm leading-relaxed">
+              <div>
+                Part of the Monash Association of Coding Annual Hackathon, I got
+                together with two friends to create a web app which easily
+                allows users to find other university students to study with.
+              </div>
+              <div className="font-bold mt-2">Key metrics:</div>
+              <ul className="list-disc list-inside text-sm text-gray-200">
+                <li>
+                  Utilises a min-heap data structure to effectively sort
+                  potential matches from most to least compatible.
+                </li>
+                <li>
+                  Comes with a live chat feature allowing two users who have
+                  matched to effortlessly plan study sessions in real time.
+                </li>
+                <li>
+                  Completed the entire development lifecycle in less than 48
+                  hours.
+                </li>
+              </ul>
+            </div>
+            <div className="flex gap-2 mt-4">
+              <span className="inline-flex items-center justify-center bg-blue-500 text-white p-2 rounded-full">
+                <FaReact size={20} />
+              </span>
+              <span className="inline-flex items-center justify-center bg-cyan-500 text-white p-2 rounded-full">
+                <RiTailwindCssFill size={20} />
+              </span>
+              <span className="inline-flex items-center justify-center bg-[#3FCF8E] text-white p-2 rounded-full">
+                <RiSupabaseFill size={20} />
+              </span>
+              <span className="inline-flex items-center justify-center bg-[#336791] text-white p-2 rounded-full">
+                <DiPostgresql size={20} />
+              </span>{" "}
+              <span className="inline-flex items-center justify-center bg-[#336791] text-white p-2 rounded-full">
+                <SiSpringboot />
+              </span>
+            </div>
           </div>
         </div>
       )}

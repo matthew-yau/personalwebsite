@@ -12,7 +12,7 @@ const Experience = () => (
     {/* Corpy & Co. */}
     <div className="mb-6 pb-4 border-b border-gray-600">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 sm:flex-row flex-col w-full">
           <a
             href="https://corpy.co.jp/en"
             target="_blank"
@@ -22,17 +22,23 @@ const Experience = () => (
             <img
               src="/images/corpyco.jpg"
               alt="Corpy & Co."
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="w-30 h-30 sm:w-20 sm:h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
-            <div className="pl-2">
-              <div className="font-bold text-xl text-white">Corpy&Co.</div>
-              <h2 className="font-semibold mb-2">AI Engineer Intern</h2>
-              <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>
-            </div>
           </a>
-        </div>
-        <div className="flex flex-col text-sm text-gray-400 md:flex-row justify-between md:items-center">
-          May 2024 — Nov 2024
+          <div className="sm:pl-2 sm:text-left text-center flex-1">
+            <div className="flex sm:flex-row flex-col w-full justify-between">
+              <div className="font-bold text-2xl text-white">Corpy&Co.</div>
+              <div className="flex text-sm text-gray-400 hidden sm:block">
+                May 2024 — Nov 2024
+              </div>
+            </div>
+
+            <h2 className="font-semibold mb-2">AI Engineer Intern</h2>
+            <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>
+            <div className="flex text-sm text-gray-400 sm:hidden justify-center mt-1">
+              May 2024 — Nov 2024
+            </div>
+          </div>
         </div>
       </div>
       <ul className="mt-3 text-sm list-disc pl-5 text-gray-300">
@@ -59,7 +65,7 @@ const Experience = () => (
     {/* PwC */}
     <div className="mb-6 pb-4 border-b border-gray-600">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 sm:flex-row flex-col w-full">
           <a
             href="https://www.pwc.com.au"
             target="_blank"
@@ -69,19 +75,27 @@ const Experience = () => (
             <img
               src="/images/pwc.jpg"
               alt="PwC"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="w-30 h-30 sm:w-20 sm:h-20 sm:h-20object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
-            <div className="pl-2">
-              <div className="font-bold text-xl text-white">PwC</div>
+          </a>
+          <div className="sm:pl-2 sm:text-left text-center flex-1">
+            <div className="flex sm:flex-row flex-col w-full justify-between">
+              <div className="font-bold text-2xl text-white">PwC</div>
+              <div className="text-sm text-gray-400 sm:block hidden">
+                Nov 2024 — Feb 2025
+              </div>
+            </div>
+
+            <div>
               <h2 className="font-semibold mb-2">Vacationer</h2>
               <p className="text-sm text-gray-400">
                 📍Melbourne, Australia — Onsite
-              </p>
+              </p>{" "}
+              <div className="text-sm text-gray-400 sm:hidden mt-1">
+                Nov 2024 — Feb 2025
+              </div>
             </div>
-          </a>
-        </div>
-        <div className="flex flex-col text-sm text-gray-400 md:flex-row justify-between md:items-center">
-          Nov 2024 — Feb 2025
+          </div>
         </div>
       </div>
       <ul className="mt-3 text-sm list-disc pl-5 text-gray-300">
@@ -105,8 +119,8 @@ const Experience = () => (
 
     {/* Morgan Stanley */}
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
+      <div className="flex sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="flex items-center flex-col sm:flex-row gap-3 w-full">
           <a
             href="https://www.morganstanley.com/"
             target="_blank"
@@ -116,21 +130,30 @@ const Experience = () => (
             <img
               src="/images/morganstanley.jpg"
               alt="Morgan Stanley"
-              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+              className="w-30 h-30 sm:w-20 sm:h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
             />
-            <div className="pl-2">
-              <div className="font-bold text-xl text-white">Morgan Stanley</div>
-              <h2 className="font-semibold mb-2">Summer Analyst</h2>
-              <p className="text-sm text-gray-400">📍Tokyo, Japan — Onsite</p>
-            </div>
           </a>
-        </div>
-        <div className="flex flex-col text-sm text-gray-400 md:flex-row justify-between md:items-center">
-          Jun 2024 — Aug 2025
+          <div className="pl-2 sm:text-left text-center flex-1">
+            <div className="flex flex-row items-center  sm:justify-between justify-center">
+              <div className="font-bold text-2xl text-white">
+                Morgan Stanley
+              </div>
+              <div className="text-sm text-gray-400 sm:block hidden">
+                Jun 2025 — Aug 2025
+              </div>
+            </div>
+            <h2 className="font-semibold mb-2">Summer Analyst</h2>
+            <p className="text-sm text-gray-400">
+              📍Tokyo, Japan — Onsite
+            </p>{" "}
+            <div className="text-sm text-gray-400 sm:hidden mt-1">
+              Jun 2025 — Aug 2025
+            </div>
+          </div>
         </div>
       </div>
       <div className="mt-3 text-sm list-disc text-gray-300">
-        Incoming Technology Summer Analyst at Morgan Stanley.
+        Technology Summer Analyst at Morgan Stanley.
       </div>
     </div>
   </div>

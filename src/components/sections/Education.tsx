@@ -11,28 +11,27 @@ const Education = () => (
     </div>
     {/* John Monash Science School */}
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
-          <a
-            href="https://jmss.vic.edu.au/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/images/jmss.jpg"
-              alt="John Monash Science School"
-              className="h-[80px] w-auto sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
-            />
-          </a>
-          <div>
-            <div className="font-bold text-xl text-white">
-              John Monash Science School
-            </div>
-            <p className="text-sm text-gray-400">2017 – 2019 (Completed)</p>
-            <p className="text-sm text-blue-400">
-              Victorian Certificate of Education (VCE)
-            </p>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+        <a
+          href="https://jmss.vic.edu.au/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex justify-center sm:block"
+        >
+          <img
+            src="/images/jmss.jpg"
+            alt="John Monash Science School"
+            className="h-[80px] sm:h-20 rounded-xl object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+          />
+        </a>
+        <div className="sm:pl-4 text-center sm:text-left">
+          <div className="font-bold text-xl text-white flex-1">
+            John Monash Science School
           </div>
+          <p className="text-sm text-gray-400 mt-1">2017 – 2019 (Completed)</p>
+          <p className="text-sm text-blue-400">
+            Victorian Certificate of Education (VCE)
+          </p>
         </div>
       </div>
       <p className="mt-2 text-sm leading-relaxed text-gray-300">
@@ -43,24 +42,25 @@ const Education = () => (
     </div>
     {/* Monash Uni - Eng & Commerce */}
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
-          <a
-            href="https://www.monash.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/images/monash.png"
-              alt="Monash University"
-              className="h-[110px] w-auto sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
-            />
-          </a>
-          <div>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+        <a
+          href="https://www.monash.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex justify-center sm:block"
+        >
+          <img
+            src="/images/monash.png"
+            alt="Monash University"
+            className="h-[80px] w-auto sm:h-20 rounded-xl object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+          />
+        </a>
+        <div>
+          <div className="sm:pl-4 text-center sm:text-left">
             <div className="font-bold text-xl text-white">
               Monash University
             </div>
-            <p className="text-sm text-gray-400">2020 (Discontinued)</p>
+            <p className="text-sm text-gray-400 mt-1">2020 (Discontinued)</p>
             <p className="text-sm text-blue-400">
               Bachelor of Engineering (Honours) & Bachelor of Commerce
             </p>
@@ -74,28 +74,25 @@ const Education = () => (
     </div>
     {/* Monash Uni - Diploma of Languages */}
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
-          <a
-            href="https://www.monash.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/images/monash.png"
-              alt="Monash University"
-              className="w-16 h-16 sm:w-20 sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
-            />
-          </a>
-          <div>
-            <div className="font-bold text-xl text-white">
-              Monash University
-            </div>
-            <p className="text-sm text-gray-400">2021 – 2024 (Completed)</p>
-            <p className="text-sm text-blue-400">
-              Diploma of Languages in Japanese
-            </p>
-          </div>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+        <a
+          href="https://www.monash.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex justify-center sm:block"
+        >
+          <img
+            src="/images/monash.png"
+            alt="Monash University"
+            className="h-[80px] w-auto sm:w-20 sm:h-20 rounded-xl object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+          />
+        </a>
+        <div className="sm:pl-4 text-center sm:text-left">
+          <div className="font-bold text-xl text-white">Monash University</div>
+          <p className="text-sm text-gray-400 mt-1">2021 – 2024 (Completed)</p>
+          <p className="text-sm text-blue-400">
+            Diploma of Languages in Japanese
+          </p>
         </div>
       </div>
       <p className="mt-2 text-sm leading-relaxed text-gray-300">
@@ -108,27 +105,25 @@ const Education = () => (
     </div>
     {/* The University of Tokyo - Exchange Semester */}
     <div className="mb-6 pb-4 border-b border-gray-600">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
-          {" "}
-          <a
-            href="https://www.u-tokyo.ac.jp/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/images/utokyo.png"
-              alt="The University of Tokyo"
-              className="w-16 h-16 sm:w-20 sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
-            />
-          </a>
-          <div>
-            <div className="font-bold text-xl text-white">
-              The University of Tokyo
-            </div>
-            <p className="text-sm text-gray-400">2022 – 2023 (Completed)</p>
-            <p className="text-sm text-blue-400">Exchange Semester</p>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+        <a
+          href="https://www.u-tokyo.ac.jp/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex justify-center sm:block"
+        >
+          <img
+            src="/images/utokyo.png"
+            alt="The University of Tokyo"
+            className="w-[80px] h-auto rounded-xl sm:w-20 sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+          />
+        </a>
+        <div className="sm:pl-4 sm:text-left text-center">
+          <div className="font-bold text-xl text-white">
+            The University of Tokyo
           </div>
+          <p className="text-sm text-gray-400 mt-1">2022 – 2023 (Completed)</p>
+          <p className="text-sm text-blue-400">Exchange Semester</p>
         </div>
       </div>
       <p className="mt-2 text-sm leading-relaxed text-gray-300">
@@ -138,34 +133,31 @@ const Education = () => (
     </div>
 
     {/* Monash Uni - CS & Commerce */}
-    <div>
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-        <div className="flex items-center gap-3">
-          <a
-            href="https://www.monash.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/images/monash.png"
-              alt="Monash University"
-              className="h-[110px] w-auto sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
-            />
-          </a>
-          <div>
-            <div className="font-bold text-xl text-white">
-              Monash University
-            </div>
-            <p className="text-sm text-gray-400">2021 – 2025 (Ongoing)</p>
-            <p className="text-sm text-blue-400">
-              Bachelor of Computer Science & Bachelor of Commerce
-            </p>
-            <p className="text-sm text-blue-400 italic">
-              Specialising in Data Science and Finance
-            </p>
-          </div>
+    <div className="mb-6 pb-4 border-b border-gray-600">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full">
+        <a
+          href="https://www.monash.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex justify-center sm:block"
+        >
+          <img
+            src="/images/monash.png"
+            alt="Monash University"
+            className="h-[80px] w-auto rounded-xl sm:h-20 object-contain hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+          />
+        </a>
+        <div className="sm:pl-4 sm:text-left text-center">
+          <div className="font-bold text-xl text-white">Monash University</div>
+          <p className="text-sm text-gray-400 mt-1">2021 – 2025 (Ongoing)</p>
+          <p className="text-sm text-blue-400">
+            Bachelor of Computer Science & Bachelor of Commerce
+          </p>
+          <p className="text-sm text-blue-400 italic">
+            Specialising in Data Science and Finance
+          </p>
         </div>
-      </div>
+      </div>{" "}
       <p className="mt-2 text-sm leading-relaxed text-gray-300">
         Currently pursuing a double degree in Computer Science and Commerce.
       </p>
