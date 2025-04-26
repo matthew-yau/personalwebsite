@@ -102,6 +102,37 @@ const Experience = () => (
         </li>
       </ul>
     </div>
+
+    {/* Morgan Stanley */}
+    <div className="mb-6 pb-4 border-b border-gray-600">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="flex items-center gap-3">
+          <a
+            href="https://www.morganstanley.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img
+              src="/images/morganstanley.jpg"
+              alt="Morgan Stanley"
+              className="w-20 h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+            />
+            <div className="pl-2">
+              <div className="font-bold text-xl text-white">Morgan Stanley</div>
+              <h2 className="font-semibold mb-2">Summer Analyst</h2>
+              <p className="text-sm text-gray-400">📍Tokyo, Japan — Onsite</p>
+            </div>
+          </a>
+        </div>
+        <div className="flex flex-col text-sm text-gray-400 md:flex-row justify-between md:items-center">
+          Jun 2024 — Aug 2025
+        </div>
+      </div>
+      <div className="mt-3 text-sm list-disc text-gray-300">
+        Incoming Technology Summer Analyst at Morgan Stanley.
+      </div>
+    </div>
   </div>
 );
 
