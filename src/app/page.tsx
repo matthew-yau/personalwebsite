@@ -59,14 +59,14 @@ export default function HomePage() {
             </Link>
           </Card>
 
-          <Card className="hover:shadow-md transition-all p-4 bg-white border border-gray-200">
+          {/* <Card className="hover:shadow-md transition-all p-4 bg-white border border-gray-200">
             <Link href="/posts" className="flex items-center gap-4">
               <BookOpen className="text-blue-600" />
               <span className="text-gray-800 text-base font-medium">
                 Read My Posts
               </span>
             </Link>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </div>
