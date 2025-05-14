@@ -43,9 +43,6 @@ export default function HomePage() {
           <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight">
             Matthew Yau
           </h1>
-          <p className="text-gray-600 mt-2 text-sm sm:text-base">
-            Welcome — explore my work and thoughts.
-          </p>
         </div>
 
         {/* 🔹 Professional Link Cards */}
