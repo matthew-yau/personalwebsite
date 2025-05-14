@@ -1,7 +1,7 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { FileText, BookOpen } from "lucide-react";
+import { FileText } from "lucide-react";
 import Link from "next/link";
 import DogWithParticles from "@/components/dawg";
 
