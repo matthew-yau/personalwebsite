@@ -33,7 +33,7 @@ const Experience = () => (
               </div>
             </div>
 
-            <h2 className="font-semibold mb-2">AI Engineer Intern</h2>
+            <h2 className="font-semibold mb-2">AI R&D Contractor</h2>
             <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>
             <div className="flex text-sm text-gray-400 sm:hidden justify-center mt-1">
               May 2024 — Nov 2024
