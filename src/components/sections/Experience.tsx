@@ -153,7 +153,7 @@ const Experience = () => (
         </div>
       </div>
       <div className="mt-3 text-sm list-disc text-gray-300">
-        Developer in the e-trading division 🔜.
+        E-trading developer in the fixed income division 🔜.
       </div>
     </div>
   </div>
