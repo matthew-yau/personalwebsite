@@ -153,7 +153,7 @@ const Experience = () => (
         </div>
       </div>
       <div className="mt-3 text-sm list-disc text-gray-300">
-        Technology Summer Analyst at Morgan Stanley.
+        Developer in the e-trading division 🔜.
       </div>
     </div>
   </div>
