@@ -88,8 +88,8 @@ const Home = () => (
         alternative to traditional delta hedging.
       </p>
       <p className="mt-3">
-        Outside of work and study, I’m an avid weightlifter and have an
-        unhealthy obsession with caffeine.
+        As of 2025, I’m wrapping up my undergraduate studies at university and
+        looking forward to whatever lies ahead!
       </p>
 
       {/* Tags */}
