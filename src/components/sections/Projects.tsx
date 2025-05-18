@@ -144,19 +144,38 @@ const Projects = () => {
 
       {/* Data Science Tab */}
       {activeTab === "Data Science" && (
-        <div className="border-b border-gray-600 mb-6 pb-4">
-          <div className="justify-between flex">
-            <div className="text-blue-500 font-bold">
-              Modelling the Australian Open With Monte Carlo Simulations
+        <div>
+          <div className="border-b border-gray-600 mb-6 pb-4">
+            <div className="justify-between flex">
+              <div className="text-blue-500 font-bold">
+                Modelling the Australian Open With Monte Carlo Simulations
+              </div>
+              <div className="text-sm text-gray-300 sm:text-right">2024</div>
             </div>
-            <div className="text-sm text-gray-300 sm:text-right">2024</div>
-          </div>
-          <div className="text-sm text-gray-300 mt-2">
-            In this project I explore the effects of various athlete attributes
-            such as offensive rating, defensive rating, proneness to injury, and
-            fatigue in performance at the Australian Open. The competition was
-            simulated using Monte Carlo Simulations while combining Heuristics
-            and Game Theory.
+            <div className="text-sm text-gray-300 mt-2">
+              In this project I explore the effects of various athlete
+              attributes such as offensive rating, defensive rating, proneness
+              to injury, and fatigue in performance at the Australian Open. The
+              competition was simulated using Monte Carlo Simulations while
+              combining Heuristics and Game Theory.
+            </div>
+          </div>{" "}
+          <div className="border-b border-gray-600 mb-6 pb-4">
+            <div className="justify-between flex">
+              <div className="text-blue-500 font-bold">
+                Immunity-driven Modelling of Viral Transmission in Populations
+              </div>
+              <div className="text-sm text-gray-300 sm:text-right">2024</div>
+            </div>
+            <div className="text-sm text-gray-300 mt-2">
+              In this project, I simulate the spread of a virus within a
+              population using a modified SIR model known as SEIVRD. The model
+              incorporates vaccination occurring at a logarithmic rate and
+              represents each compartment—Susceptible, Exposed, Infected,
+              Vaccinated, Recovered, and Deceased—through a system of
+              differential equations to analyse the dynamics of transmission and
+              immunity over time.
+            </div>
           </div>
         </div>
       )}
