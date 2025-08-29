@@ -33,7 +33,7 @@ const Experience = () => (
               </div>
             </div>
 
-            <h2 className="font-semibold mb-2">AI R&D Contractor</h2>
+            <h2 className="font-semibold mb-2">AI Engineering Intern</h2>
             <p className="text-sm text-gray-400">📍Tokyo, Japan — Remote</p>
             <div className="flex text-sm text-gray-400 sm:hidden justify-center mt-1">
               May 2024 — Nov 2024
@@ -87,7 +87,7 @@ const Experience = () => (
             </div>
 
             <div>
-              <h2 className="font-semibold mb-2">Vacationer</h2>
+              <h2 className="font-semibold mb-2">Advisory Intern</h2>
               <p className="text-sm text-gray-400">
                 📍Melbourne, Australia — Onsite
               </p>{" "}
@@ -142,7 +142,7 @@ const Experience = () => (
                 Jun 2025 — Aug 2025
               </div>
             </div>
-            <h2 className="font-semibold mb-2">Summer Analyst</h2>
+            <h2 className="font-semibold mb-2">Software Engineering Intern</h2>
             <p className="text-sm text-gray-400">
               📍Tokyo, Japan — Onsite
             </p>{" "}
@@ -152,9 +152,61 @@ const Experience = () => (
           </div>
         </div>
       </div>
-      <div className="mt-3 text-sm list-disc text-gray-300">
-        E-trading developer in the fixed income division 🔜.
+      <ul className="mt-3 text-sm list-disc pl-5 text-gray-300">
+        <li>
+          Reduced the latency of a FX jump detection algorithm by over 92%,
+          significantly enhancing trading efficiency across all G10 currency
+          desks in the Asia-Pacific region.
+        </li>
+        <li>
+          Enhanced business logic to ensure accurate and consistent handling of
+          bid-ask spread comparisons across diverse client profiles.
+        </li>
+        <li>
+          Delivered complete edge case coverage, making the codebase more
+          resilient and reliable while keeping the implementation concise.
+        </li>
+      </ul>
+    </div>
+
+    {/* NAB */}
+    <div className="mb-6 pb-4 border-b border-gray-600">
+      <div className="flex sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="flex items-center flex-col sm:flex-row gap-3 w-full">
+          <a
+            href="https://www.nab.com.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img
+              src="/images/nab.jpg"
+              alt="NAB"
+              className="w-30 h-30 sm:w-20 sm:h-20 object-contain rounded-xl hover:outline hover:outline-2 hover:outline-blue-400 hover:outline-offset-2 transition duration-200"
+            />
+          </a>
+          <div className="pl-2 sm:text-left text-center flex-1">
+            <div className="flex flex-row items-center  sm:justify-between justify-center">
+              <div className="font-bold text-2xl text-white">
+                National Australia Bank
+              </div>
+              <div className="text-sm text-gray-400 sm:block hidden">
+                Sep 2025 — Nov 2025
+              </div>
+            </div>
+            <h2 className="font-semibold mb-2">Software Engineering Intern</h2>
+            <p className="text-sm text-gray-400">
+              📍Melbourne, Australia — Onsite
+            </p>{" "}
+            <div className="text-sm text-gray-400 sm:hidden mt-1">
+              Sep 2025 — Nov 2025
+            </div>
+          </div>
+        </div>
       </div>
+      <ul className="mt-3 text-sm list-disc pl-5 text-gray-300">
+        <li>To be updated.</li>
+      </ul>
     </div>
   </div>
 );

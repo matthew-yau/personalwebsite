@@ -13,7 +13,7 @@ export default function BlogPage() {
           alt="Background"
           className="w-full h-full object-cover blur-sm scale-105"
         />
-        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-xl" />
       </div>
 
       {/* Back Button */}

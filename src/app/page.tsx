@@ -30,9 +30,9 @@ export default function HomePage() {
           <img
             src="/images/bg.jpg"
             alt="Background"
-            className="w-full h-full object-cover blur-sm scale-105"
+            className="w-full h-full object-cover blur-xl scale-105"
           />
-          <div className="absolute inset-0 bg-white/30 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-white/30 backdrop-blur-xl" />
         </div>
 
         {/* 🔹 Profile Image */}
